@@ -1,4 +1,4 @@
-site_name: Shader Snippets Documentation
+site_name: Shader Documentation
 theme:
   name: material
   features:

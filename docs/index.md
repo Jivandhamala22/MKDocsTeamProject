@@ -1,4 +1,4 @@
-# Shader Snippets Documentation
+# Procedural Shader Documentation
 
 Welcome to the Shader Snippets Documentation! This site collects **procedural shaders** that create visual effects, like patterns or colors, on a full-screen rectangle (called a quad). Our shaders are written in **GLSL** (used in Shadertoy and WebGL) and **HLSL** (used in Unreal Engine and Unity).
 
