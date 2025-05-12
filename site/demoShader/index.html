@@ -18,7 +18,7 @@
     
     
       
-        <title>Shaders - Shader Snippets Documentation</title>
+        <title>Shaders - Shader Documentation</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#demo-shader-gradient" class="md-skip">
+        <a href="#demo-shader-procedural" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Shader Snippets Documentation" class="md-header__button md-logo" aria-label="Shader Snippets Documentation" data-md-component="logo">
+    <a href=".." title="Shader Documentation" class="md-header__button md-logo" aria-label="Shader Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Shader Snippets Documentation
+            Shader Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -263,13 +263,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Shader Snippets Documentation" class="md-nav__button md-logo" aria-label="Shader Snippets Documentation" data-md-component="logo">
+    <a href=".." title="Shader Documentation" class="md-nav__button md-logo" aria-label="Shader Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Shader Snippets Documentation
+    Shader Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -359,20 +359,50 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="GLSL (Shadertoy)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glsl-code-with-title" class="md-nav__link">
     <span class="md-ellipsis">
-      Code
+      GLSL Code // with title
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytorch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-code-with-line-number-and-higlighting-specific-line-number-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Code // with line number and higlighting specific line number code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shader-video-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shader Video Demo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-demo-embedding-external-video-link-like-from-youtube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Demo ... Embedding external video link like from youtube
+    </span>
+  </a>
   
 </li>
       
@@ -400,15 +430,56 @@
 
 
 
-<h1 id="demo-shader-gradient">Demo Shader: Gradient</h1>
+<h1 id="demo-shader-procedural">Demo Shader: Procedural</h1>
 <h2 id="glsl-shadertoy">GLSL (Shadertoy)</h2>
-<h3 id="code">Code</h3>
-<div class="highlight"><pre><span></span><code>// glsl code
-void mainImage(out vec4 fragColor, in vec2 fragCoord) {
-    vec2 uv = fragCoord / iResolution.xy;
-    fragColor = vec4(uv.x, uv.y, 0.0, 1.0);
-} 0
-</code></pre></div>
+<h2 id="glsl-code-with-title">GLSL Code  // with title</h2>
+<p>Some <code>glsl</code> code goes here
+<div class="highlight"><span class="filename">pixelShader.glsl</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">shader_type</span><span class="w"> </span><span class="n">canvas_item</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">void</span><span class="w"> </span><span class="n">vertex</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="c1">// Called for every vertex the material is visible on.</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kt">void</span><span class="w"> </span><span class="n">fragment</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="c1">// Called for every pixel the material is visible on.</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="c1">// Create a wavy pattern based on UV coordinates and time</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">UV</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">50.0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">TIME</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">UV</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">50.0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">TIME</span><span class="p">);</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="c1">// Normalize the value to 0.0–1.0 for grayscale</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.6</span><span class="p">;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="c1">// Output as grayscale with full opacity</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">COLOR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">vec4</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span><span class="w"> </span>
+</code></pre></div></p>
+<h2 id="pytorch">Pytorch</h2>
+<p>Some <code>python</code> code goes here  // highlighting according to  specific language
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">sum</span><span class="p">():</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shader development doc&#39;</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="json-code-with-line-number-and-higlighting-specific-line-number-code">JSON Code   // with line number and higlighting specific line number code</h2>
+<p>Some <code>json</code> code entitled here...
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="hll"><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+</span><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="hll"><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span>
+</span><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nt">&quot;cars&quot;</span><span class="p">:[</span><span class="s2">&quot;Ford&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;BMW&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Fiat&quot;</span><span class="p">]</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="err">myObj.cars</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">;</span>
+</code></pre></div></td></tr></table></div></p>
+<h2 id="shader-video-demo">Shader Video Demo</h2>
+<p>Shader in action, made by <code>Utku</code>...</p>
+<video controls width="400">
+    <source src="/static/videos/shaderexamplevideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<p><em>Shows different shaders running in Unreal Engine.</em></p>
+<h2 id="video-demo-embedding-external-video-link-like-from-youtube">Video Demo ... Embedding external video link like from youtube</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BrZ4pWwkpto?si=hCWamP_iBE9a_Amq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><em>Getting Started with Compute Shaders in Unity.</em></p>
 
 
 

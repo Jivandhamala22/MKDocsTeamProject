@@ -46,7 +46,7 @@ myObj.cars[0];
 ## Shader Video Demo
 Shader in action, made by `Utku`...
 <video controls width="400">
-    <source src="docs/static/videos/shaderexamplevideo.mp4" type="video/mp4">
+    <source src="../static/videos/shaderexamplevideo.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 *Shows different shaders running in Unreal Engine.*
