@@ -22,6 +22,23 @@ void fragment() {
 } 
 ```
 
+## GODOT icon shader
+```glsl title='icon.gdshader'
+shader_type canvas_item;
+void fragment() {
+	// Called for every pixel the material is visible on.
+	//COLOR = vec4(1,1,1,1);;
+	vec4 input_color = texture(TEXTURE, UV);
+
+	if (UV.x > 0.5) {
+		COLOR = vec4(0,0, 0, input_color.r);
+	}
+	else {
+		COLOR = vec4(1.0, 1.0, 1.0, input_color.g);
+	}
+}
+```
+
 
 ## Pytorch  
 Some `python` code goes here  // highlighting according to  specific language
