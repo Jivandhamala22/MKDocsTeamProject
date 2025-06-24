@@ -1,4 +1,5 @@
 site_name: Shader Documentation
+
 theme:
   name: material
   features:
@@ -8,9 +9,9 @@ theme:
     - navigation.top
     - content.code.link
     - content.code.annotation
-    - content.code.copy  # Adds copy buttons to code blocks
-    - search.suggest     # Enhances search with suggestions
-    - search.highlight   # Highlights search terms
+    - content.code.copy
+    - search.suggest
+    - search.highlight
 
   palette:
     - scheme: default
@@ -25,12 +26,14 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: lime
+
 plugins:
-  - search              # Enables full-text search
+  - search
+
 markdown_extensions:
-  - pymdownx.highlight: # Syntax highlighting for code
+  - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences # Advanced code block features
+  - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.details
@@ -38,11 +41,16 @@ markdown_extensions:
   - admonition
   - pymdownx.arithmatex:
       generic: true
-  
-
-  - attr_list           # For HTML attributes (e.g., video width)
-  - md_in_html          # For embedding videos or WebGL
+  - attr_list
+  - md_in_html
 
 nav:
-  - Home: index.md
-  - Shaders: demoShader.md/   # Placeholder for future shader pages
+  - Home: homePage.md
+
+  - Shaders:
+      - Overview: shaders/shaderPage.md
+      - Animation:
+          - TIE Fighter: shaders/animation/tie_fighter.md
+      # You can add more categories like this:
+      # - Noise:
+      #     - Cloud FBM: shaders/noise/cloud_fbm.md
