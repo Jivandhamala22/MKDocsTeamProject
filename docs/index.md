@@ -26,9 +26,9 @@ Browse all procedural shaders, organized by:
 **🧩 Engine Integration**  
 Learn how to use shaders in:
 
-➡️ [Unreal Engine]()  
+➡️ [Unreal Engine](engines/enginePage.md)  
 ➡️ [Unity](engines/enginePage.md)  
-➡️ [Godot]()
+➡️ [Godot](engines/enginePage.md)
 
 Each section includes setup guides, shader-specific examples, and performance notes.
 
