@@ -40,16 +40,20 @@ Explain the logic used in this shader.
 
 ---
 
-## 🎛️ Parameters
+## 💻 Code
+
+```glsl
+// Paste full GLSL or HLSL code here
+
+---
+ 
+<!-- ## 🎛️ Parameters
 
 | Name | Description | Range | Default |
 |------|-------------|-------|---------|
 | `T`  | Looping time | 0–40  | —       |
 | ...  | ...          | ...   | ...     |
 
----
+-->
 
-## 💻 Code
-
-```glsl
-// Paste full GLSL or HLSL code here
+--
